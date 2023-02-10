@@ -1,0 +1,37 @@
+# Site settings
+title: "jmikola.net"
+email: "jmikola@gmail.com"
+description: "Personal website for Jeremy Mikola"
+baseurl: ""
+url: "https://jmikola.github.io"
+twitter_username: "jmikola"
+github_username: "jmikola"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-redirect-from
+
+permalink: "pretty" # "/:categories/:year:month:day/:title/"
+
+# GitHub Pages settings
+# See: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#configuring-jekyll-in-your-github-pages-site
+lsi: false
+safe: true
+incremental: false
+highlighter: "rouge"
+gist:
+  noscript: false
+kramdown:
+  math_engine: "mathjax"
+  syntax_highlighter: "rouge"
+
+# Default excludes
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
