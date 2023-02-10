@@ -118,7 +118,8 @@ resulted in a peak of 2305 connections before the load began to subside.
 While using [$where][] for this test was a bit contrived, it did succinctly
 demonstrate the problem with client-side socket timeouts. Having the driver
 abruptly close sockets for long-running operations can inadvertently cause of
-DoS attack against your database server given a high enough request load.
+<abbr title="Denial of service">DoS</abbr> attack against your database server
+given a high enough request load.
 
  * Sockets, file descriptors, and threads are limited resources. In this test,
    we were letting connections (i.e. threads with sockets) accumulate on the
@@ -214,8 +215,6 @@ concerned.
 > Never gonna give you up ♫
 > <br>Never gonna let you down ♬
 > <br>Never gonna [`SO_RCVTIMEO`][rickroll] and desert you ♫
-
-  *[DoS]: Denial of Service
 
   [$where]: http://docs.mongodb.org/manual/reference/operator/query/where/
   [$maxTimeMS]: http://docs.mongodb.org/manual/reference/operator/meta/maxTimeMS/

@@ -32,12 +32,13 @@ covers a bit more than those four methods:
 For obvious reasons, we decided to do without the full CRUDCRADBOoMFaM acronym
 and stick with CRUD.
 
-Compared to the [Server Selection][selection] and [SDAM][sdam] specifications,
-which deal with internal driver behavior, the CRUD API is a high-level
-specification; however, the goal of improving consistency across our drivers is
-one and the same. To ensure that multiple language viewpoints were considered in
-drafting the spec, the team included Craig Wilson (C#), Jeff Yemin (Java), Tyler
-Brock (C and C++), and myself (representing PHP and other dynamic languages).
+Compared to the [Server Selection][selection] and
+[Server Discovery and Monitoring][sdam] specifications, which deal with internal
+driver behavior, the CRUD API is a high-level specification; however, the goal
+of improving consistency across our drivers is one and the same. To ensure that
+multiple language viewpoints were considered in drafting the spec, the team
+included Craig Wilson (C#), Jeff Yemin (Java), Tyler Brock (C and C++), and
+myself (representing PHP and other dynamic languages).
 
 ### What's in a Name?
 
@@ -173,12 +174,6 @@ article (and some that weren't, such as error reporting), do give the
 [CRUD API spec][crud] a look. We've also published a set of
 [standardized acceptance tests][tests] in YAML and JSON formats, which are being
 used by many of our [next generation drivers][nextgen] that implement the spec.
-
-  *[API]: Application programming interface
-  *[CRUD]: Create read update delete
-  *[JSON]: JavaScript object notation
-  *[SDAM]: Server discovery and monitoring
-  *[YAML]: YAML ain't markup language
 
   [bulk]: http://docs.mongodb.org/manual/reference/method/js-bulk/
   [crud]: https://github.com/mongodb/specifications/blob/master/source/crud/crud.rst

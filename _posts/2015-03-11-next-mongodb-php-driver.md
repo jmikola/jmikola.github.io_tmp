@@ -26,9 +26,10 @@ that we could utilize. Therefore, the 1.x PHP driver contains its own BSON and
 connection management C libraries. [HHVM][hhvm], an alternative PHP runtime with
 its own C++ extension API, also did not exist years ago, nor was [PHP 7.0][php7]
 on the horizon. Lastly, methods of packaging and distributing libraries have
-changed. [Composer][composer] has superseded PEAR as the de facto standard for
-PHP libaries and support for extensions (currently handled by PECL) is
-forthcoming.
+changed. [Composer][composer] has superseded
+<abbr title="PHP Extension and Application Repository">PEAR</abbr> as the de
+facto standard for PHP libaries and support for extensions (currently handled by
+<abbr title="PHP Extension Community Library">PECL</abbr>) is forthcoming.
 
 During the spring of 2014, we worked with a team of students from
 [Facebook's Open Academy][fb-openacademy] program to prototype an
@@ -37,9 +38,9 @@ project was twofold: research [HHVM's extension API][hhvm-extension-api] and
 determine the feasibility of building a driver atop [libmongoc][] (our then new
 C driver) and [libbson][]. Although the final result was not feature complete,
 the project was a valuable learning experience. The C driver proved quite up to
-the task, and HNI, which allows an HHVM extension to be written with a
-combination of PHP and C++, highlighted critical areas of the driver for which
-we'd want to use C.
+the task, and <abbr title="Hack Native Interface">HNI</abbr>, which allows an
+HHVM extension to be written with a combination of PHP and C++, highlighted
+critical areas of the driver for which we'd want to use C.
 
 This all leads up to the question of how best to support PHP 5.x, HHVM, and PHP
 7.0 with our next-generation driver. Maintaining three disparate, monolithic
@@ -67,7 +68,7 @@ functionality:
 
  * Connection management
  * BSON encoding and decoding
- * Object document serialization (to support ODM libraries)
+ * Object document serialization (to support <abbr title="Object document mapper">ODM</abbr> libraries)
  * Executing commands and write operations
  * Handling queries and cursors
 
@@ -112,14 +113,6 @@ the essential components across GitHub and JIRA:
 The existing [PHP][jira-php] project in JIRA will remain open for reporting bugs
 against the 1.x driver, but we would ask that you use the new projects above for
 anything pertaining to our next-generation drivers.
-
-  *[API]: Application programming interface
-  *[CRUD]: Create read update delete
-  *[HHVM]: HipHop Virtual Machine
-  *[HNI]: HHVM native interface
-  *[ODM]: Object document mapper
-  *[PEAR]: PHP Extension and Application Repository
-  *[PECL]: PHP Extension Community Library
 
   [bjori]: http://twitter.com/bjori
   [composer]: https://getcomposer.org/

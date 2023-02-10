@@ -43,7 +43,7 @@ I ended up with a relatively simple script that does the following:
 
  * Downloads a PHP tarball for a specific version (e.g. 5.5.15)
  * Allow a label (e.g. 5.5) to be specified for naming INI and install directories
- * Adds a common set of config flags (e.g. debug mode, extensions, ZTS)
+ * Adds a common set of config flags (e.g. debug mode, extensions, <abbr title="Zend Thread Safety">ZTS</abbr>)
  * Builds PHP for the given options, INI and install directories
  * Logs the build process and deletes the temporary build directory afterwards
 
@@ -131,11 +131,6 @@ shell at that point.
 Managing multiple PHP versions is still a headache, but this has saved me from
 throwing in the towel and using a cluster of virtual machines. Hopefully someone
 else finds it useful, too.
-
-  *[Dash]: Debian Almquist Shell
-  *[POSIX]: Portable Operating System Interface
-  *[PPA]: Personal Package Archive
-  *[ZTS]: Zend Thread Safety
 
   [bison]: http://www.gnu.org/software/bison/
   [building-php]: http://www.phpinternalsbook.com/build_system/building_php.html

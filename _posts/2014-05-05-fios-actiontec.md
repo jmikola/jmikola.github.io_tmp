@@ -12,15 +12,17 @@ hinted at overpopulated (read: oversold) nodes. Rather than wait for Cablevision
 to upgrade its infrastructure, I jumped over to FiOS as soon as it became
 available.
 
-Each FiOS installation includes an ONT that converts the fiber-optic cable to
-coax or Ethernet. Using Ethernet limits you to just internet service, but that's
-not a problem at all for [cord cutters][cordcutters]; however, since my building
-was already wired for coax and I wasn't keen on hanging Cat5 cable from my
-apartment window down to the meter room, I went with coax and Verizon's bundled
-Actiontec MI424WR router.
+Each FiOS installation includes an
+<abbr title="Optical network terminal">ONT</abbr> that converts the fiber-optic
+cable to coax or Ethernet. Using Ethernet limits you to just internet service,
+but that's not a problem at all for [cord cutters][cordcutters]; however, since
+my building was already wired for coax and I wasn't keen on hanging Cat5 cable
+from my apartment window down to the meter room, I went with coax and Verizon's
+bundled Actiontec MI424WR router.
 
-With FiOS, the MI424WR serves double duty as a MoCa bridge, converting coax to
-usable Ethernet, and router. As far as routers go, it's not too bad. There's
+With FiOS, the MI424WR serves double duty as a
+<abbr title="Multimedia over Coax Alliance">MoCA</abbr> bridge, converting coax
+to usable Ethernet, and router. As far as routers go, it's not too bad. There's
 actually quite a lot of functionality buried behind all of the "Are you sure you
 want to see the advanced options?" prompts in its admin GUI. The MI424WR's
 diminutive [NAT table][nat-issue] is a common complaint, but I haven't been
@@ -38,7 +40,8 @@ Clicking "UnHide" did exactly what you might expect: my encryption key was
 revealed in plain text. And if you're curious, the button itself is nothing more
 than a bit jQuery that fills in the actual key from a `js_passcode` variable
 defined in the page source. I'm a bit curious if a creative encryption key could
-be used to exploit an XSS vulnerability, but not enough to actually test it out.
+be used to exploit an <abbr title="Cross-site scripting">XSS</abbr>
+vulnerability, but not enough to actually test it out.
 
 It's obvious that Verizon intended this as some sort of convenience for their
 customers (likely the type prone to writing their passwords on a post-it note),
@@ -110,8 +113,8 @@ into a MoCa bridge. To paraphrase, the steps are as follows:
     being requested.
  4. Access the settings for *Network (Home/Office)* and enable *Broadband
     Connection (Coax)* under the list of bridged connections. The original guide
-    referred to a STP checkbox, but I never saw it listed for the coax
-    connection.
+    referred to a <abbr title="Spanning tree protocol">STP</abbr> checkbox, but
+    I never saw it listed for the coax connection.
  5. Disable the *Wireless Access Point* network interface completely and remove
     it from any bridge configuration.
  6. If necessary, change the *Firewall Settings* to the minimum setting.
@@ -125,9 +128,10 @@ into a MoCa bridge. To paraphrase, the steps are as follows:
 Once the MI424WR is in bridge mode, its admin GUI will be inaccessible unless
 you connect directly to one of its LAN ports with a static IP address in the
 same subnet. As an added benefit, open port 4567 should no longer be an issue.
-For FiOS TV customers with a STB, the [original thread][dsl-bridge] I referenced
-has since been superseded with a [new guide][dsl-bridge-vod], which includes
-additional instructions for ensuring compatibility with VOD services.
+For FiOS TV customers with a set-top box, the [original thread][dsl-bridge] I
+referenced has since been superseded with a [new guide][dsl-bridge-vod], which
+includes additional instructions for ensuring compatibility with
+<abbr title="Video on demand">VOD</abbr> services.
 
 !["Router installation"][fios-wrt160n]
 
@@ -137,20 +141,6 @@ dreadful DNS servers, which like to resolve non-existent domains to
 [search.dnsassist.verizon.net][vz-dnsassist] and conveniently load up a page
 full of Yahoo search results and targeted ads. Thankfully, I can rely on
 Google's DNS servers to [behave properly][google-nxdomain].
-
-  *[DHCP]: Dynamic host configuration protocol
-  *[LAN]: Local area network
-  *[MoCa]: Multimedia over coax alliance
-  *[ONT]: Optical network terminal
-  *[GUI]: Graphical user interface
-  *[SSID]: Service set identifier
-  *[STB]: Set-top box
-  *[STP]: Spanning tree protocol
-  *[VOD]: Video on demand
-  *[WAN]: Wide area network
-  *[WEP]: Wireless encryption protocol
-  *[WPA]: Wifi protected access
-  *[XSS]: Cross-site scripting
 
   [actiontec-moca]: http://www.newegg.com/Product/Product.aspx?Item=N82E16833996262
   [cordcutters]: http://www.reddit.com/r/cordcutters

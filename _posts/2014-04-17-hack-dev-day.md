@@ -65,8 +65,9 @@ built atop an existing project, such as [Ace] or [Atom]. Facebook confirmed that
 it was an organic project that had been in development for at least a year. In
 the ten seconds it was on screen, we saw some code intel and type checking in
 action. In a later session, we'd learn that the editor sported an embedded
-JavaScript port of `hh_client`, SCM integration, and debugging facilities to
-step through an application request launched in a second browser tab.
+JavaScript port of `hh_client`, <abbr title="Source code management">SCM</abbr>
+integration, and debugging facilities to step through an application request
+launched in a second browser tab.
 
 ### Converting PHP to Hack <small>with Josh Watzman</small>
 
@@ -201,11 +202,12 @@ PHP docblock annotations. The syntax was immediately recognizable to me, since
 I've been working with an [Open Academy][fb-openacademy] class this semester to
 prototype a [MongoDB driver for HHVM][mongo-hhvm-driver]. HHVM extensions have
 the option of being written in pure PHP (actually Hack syntax) or a blend of PHP
-and C++ using HNI. In the latter case, PHP functions can be declared without a
-body and prefixed `<<__Native>>` (a user attribute) to instruct HHVM to look for
-a corresponding C++ implementation. In our project, most of the driver can be
-written in PHP, but some functions resort to C++ in order to interact with
-[libmongoc] and [libbson].
+and C++ using <abbr title="Hack Native Interface">HNI</abbr>. In the latter
+case, PHP functions can be declared without a body and prefixed `<<__Native>>`
+(a user attribute) to instruct HHVM to look for a corresponding C++
+implementation. In our project, most of the driver can be written in PHP, but
+some functions resort to C++ in order to interact with [libmongoc] and
+[libbson].
 
 Before this talk, I wasn't aware that user attributes were utilized for other
 language features outside of HNI. For instance, the ``<<Override>>`` attribute
@@ -261,45 +263,38 @@ HHVM from source, which makes [Travis CI] integration a pipe dream.
 Support for platforms other than x86 Linux is also on the agenda. Facebook
 enlisted all five feet and two inches of [Elizabeth Smith][esmith] to bring
 Windows compatibility up to speed, and progress is also being made on OSX and
-ARM. Compatibility for HHVM's JIT and interpreter modes are tracked separately,
-but the end goal is obviously full support for both on each platform.
+ARM. Compatibility for HHVM's <abbr title="Just-in-time">JIT</abbr> and
+interpreter modes are tracked separately, but the end goal is obviously full
+support for both on each platform.
 
 Throughout the presentation, Paul and Sara gave frequent shoutouts to the HHVM
 community outside of Facebook. Nearly every slide had a couple of faces in the
 margin, highlighting some of the project's most active contributors. Special
 mention went to [Simon Welsh][swelsh], who has single-handedly converted more
-than 20 HHVM extensions from IDL to HNI. This is all part of a team-wide effort
-being tracked [here][hhvm-1480]. Sara candidly admitted that the original IDL
-API for HHVM's extensions was bad enough to make PHP's own C API look appealing.
-HNI is a huge improvement and has really accelerated the development of new
-extensions, MongoDB's driver project included.
-
-On a related note to HHVM extensions, I should mention that [Nils][nadermann]
-was in attendance for the event (representing [Composer] and [phpBB]). He
-recently began working on a [feature][composer-2898] to support installation of
-PHP and HHVM extensions. Composer has long supported dependencies on PECL
-extensions, but users were always left to their own devices when it came to
-installing them (no easy task on Windows). Recently, PECL has begun automating
-Windows builds for extensions in its repository, which overcomes one hurdle.
-Assuming the feature comes along as planned, we could ultimately see Composer
-picked up as HHVM's de facto extension delivery tool down the line.
+than 20 HHVM extensions from
+<abbr title="Interface description language">IDL</abbr> to HNI. This is all part
+of a team-wide effort being tracked [here][hhvm-1480]. Sara candidly admitted
+that the original IDL API for HHVM's extensions was bad enough to make PHP's own
+C API look appealing. HNI is a huge improvement and has really accelerated the
+development of new extensions, MongoDB's driver project included.
 
 One last topic to address was Facebook's commitment to keeping HHVM's
 development open. Based on questions asked throughout the day, it was obvious
-that Facebook has quite a bit of FUD to overcome when it comes to promoting
-adoption of Hack and, to a lesser extent, HHVM. Sara said that code reviews will
-happen on [reviews.facebook.net], a public-facing [Phabricator] deployment.
-Currently, the [GitHub repository][hhvm-github] is synced once daily, but there
-are plans to reduce that latency and implement a two-way sync. The HHVM team is
-also considering opening up their biweekly design meetings to the public via
-either live video or recordings.
+that Facebook has quite a bit of
+<abbr title="Fear, uncertainty, and doubt">FUD</abbr> to overcome when it comes
+to promoting adoption of Hack and, to a lesser extent, HHVM. Sara said that code
+reviews will happen on [reviews.facebook.net], a public-facing [Phabricator]
+deployment. Currently, the [GitHub repository][hhvm-github] is synced once
+daily, but there are plans to reduce that latency and implement a two-way sync.
+The HHVM team is also considering opening up their biweekly design meetings to
+the public via either live video or recordings.
 
 ### HHVM Performance <small>with Edwin Smith</small>
 
 We started the day with discussions about type checking, high-level Hack syntax,
-and PaaS computing platforms. Edwin was about to take us to the opposite end of
-the computing spectrum with a tour of processor dies and assembly code, but not
-before telling us a story.
+and <abbr title="Platform as a service">PaaS</abbr> computing platforms. Edwin
+was about to take us to the opposite end of the computing spectrum with a tour
+of processor dies and assembly code, but not before telling us a story.
 
 Five years ago, Facebook switched over to HipHop, the infamous PHP-to-C++
 compiler and predecessor of HHVM. The company had an internal goal to fully
@@ -432,16 +427,6 @@ the very first place I'll visit (after the obligatory In-N-Out stop) will be
 
   [^2]: I gave up trying to find a natural way to work a mention of this into
         the post, but suffice it to say this beverage is utterly amazing.
-
-  *[CI]: Continuous integration
-  *[FUD]: Fear, uncertainty, and doubt
-  *[HNI]: HHVM native interface
-  *[IDE]: Integrated development environment
-  *[IDL]: Interface description language
-  *[JIT]: Just-in-time
-  *[JVM]: Java virtual machine
-  *[PaaS]: Platform as a service
-  *[SCM]: Source code management
 
   [Ace]: http://ace.c9.io/
   [Atom]: http://atom.io/
