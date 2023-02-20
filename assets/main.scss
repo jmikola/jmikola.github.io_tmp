@@ -1,0 +1,17 @@
+---
+---
+
+@import "minima";
+
+header.site-header,
+footer.site-footer {
+    background-color: #eee;
+}
+
+header.site-header a.site-title {
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("/assets/icons/350.png");
+    padding-left: 2.5em;
+}

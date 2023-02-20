@@ -4,12 +4,12 @@ email: "jmikola@gmail.com"
 description: "Personal website for Jeremy Mikola"
 baseurl: ""
 url: "https://jmikola.github.io"
-twitter_username: "jmikola"
-github_username: "jmikola"
 
 # Build settings
 markdown: kramdown
-theme: minima
+
+# GitHub Pages enables some plugins by default
+# See: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#plugins
 plugins:
   - jekyll-redirect-from
 
@@ -27,11 +27,32 @@ kramdown:
   math_engine: "mathjax"
   syntax_highlighter: "rouge"
 
-# Default excludes
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# SEO tag settings
+# See: https://github.com/jekyll/jekyll-seo-tag
+seo_tag:
+  author:
+    name: Jeremy Mikola
+    url: https://jmikola.net/
+    twitter: jmikola
+
+twitter:
+  username: jmikola
+
+# Minima theme settings
+# See: https://github.com/jekyll/minima/blob/v2.5.1/README.md
+theme: minima
+
+twitter_username: "jmikola"
+github_username: "jmikola"
+# facebook_username: "jmikola"
+# instagram_username: "jmikola"
+# linkedin_username: "jmikola"
+# youtube_username: "@jmikola"
+rss: rss
+
+google_analytics: "UA-18627379-1"
+
+show_excerpts: true
+
+disqus:
+  shortname: "jmikola-net"

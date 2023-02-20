@@ -164,5 +164,5 @@ Google's DNS servers to [behave properly][google-nxdomain].
   [compu-help]: http://www.compu-help.us/205.htm
   [slashdot-vz-pw]: http://tech.slashdot.org/story/10/08/01/1845234/Verizon-Changing-Users-Router-Passwords
 
-  [verizon-account]: /images/20140505_verizon_account.png
-  [fios-wrt160n]: /images/20140505_fios_wrt160n.jpg
+  [verizon-account]: /assets/images/20140505_verizon_account.png
+  [fios-wrt160n]: /assets/images/20140505_fios_wrt160n.jpg

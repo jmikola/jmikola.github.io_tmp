@@ -201,7 +201,9 @@ and driver resources much more responsibly. This is doubly important given the
 PHP driver's lack of connection pooling. Our persistent connection model means
 that the expected connection load for a single mongod comes down to:
 
-<p class="text-center">web servers × worker pool size × mongod connections</p>
+```
+web servers × worker pool size × mongod connections
+```
 
 Workers (i.e. driver instances) will typically require a single mongod
 connection. Multiple connections could be required if different sets of auth
@@ -242,4 +244,4 @@ concerned.
         a collection scan (as we do here) is generally a bad idea unless you
         know what you're doing.
 
-  [tcp_states]: /images/20150310_tcp_states.png
+  [tcp_states]: /assets/images/20150310_tcp_states.png
