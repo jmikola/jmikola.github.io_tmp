@@ -1,7 +1,7 @@
 ---
 title: "Building and Managing Multiple Versions of PHP"
 disqus_identifier: "53e4eda0a1797b61365fa59c"
-redirect_from: ["/blog/php-build-script"]
+redirect_from: ["/blog/php-build-script/"]
 tags: [php]
 ---
 Before joining MongoDB to work on the [PHP driver][mongo-php-driver] a couple of

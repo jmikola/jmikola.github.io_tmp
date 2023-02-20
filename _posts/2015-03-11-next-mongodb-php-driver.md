@@ -2,7 +2,7 @@
 title: "Designing the Next PHP and HHVM MongoDB Drivers"
 also: "https://www.mongodb.com/blog/post/call-feedback-new-php-and-hhvm-drivers"
 disqus_identifier: "55007b9af710fd5e149f0c63"
-redirect_from: ["/blog/next-mongodb-php-driver"]
+redirect_from: ["/blog/next-mongodb-php-driver/"]
 tags: [mongodb, php]
 ---
 > In the beginning [Kristina][kchodorow] created the MongoDB PHP driver. Now the

@@ -1,7 +1,7 @@
 ---
 title: "The Rick Astley of Timeouts: maxTimeMS"
 disqus_identifier: "53f2406992d40a5de509a859"
-redirect_from: ["/blog/mongodb-timeouts"]
+redirect_from: ["/blog/mongodb-timeouts/"]
 tags: [mongodb, php]
 ---
 **tl;dr:** Use [maxTimeMS][] instead of client-side socket timeouts.

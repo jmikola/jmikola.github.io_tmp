@@ -1,7 +1,7 @@
 ---
 title: "Dumping the Verizon FiOS Actiontec Router"
 disqus_identifier: "5367e7caa8780bca7b88158e"
-redirect_from: ["/blog/fios-actiontec"]
+redirect_from: ["/blog/fios-actiontec/"]
 ---
 Hoboken is blessed with some decent options when it comes to internet service.
 Verizon started wiring up most of the town with FiOS back in 2009. This was

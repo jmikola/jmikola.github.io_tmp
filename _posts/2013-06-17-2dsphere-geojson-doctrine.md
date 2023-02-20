@@ -2,7 +2,7 @@
 title: "2dsphere, GeoJSON, and Doctrine MongoDB"
 also: "https://www.mongodb.com/blog/post/2dsphere-geojson-and-doctrine-mongodb"
 disqus_identifier: "5367e7aaa8780bca7b88158c"
-redirect_from: ["/blog/2dsphere-geojson-doctrine"]
+redirect_from: ["/blog/2dsphere-geojson-doctrine/"]
 tags: [mongodb]
 ---
 It seems that GeoJSON is all the rage these days. Last month, Ian Bentley shared

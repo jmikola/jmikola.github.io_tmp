@@ -2,7 +2,7 @@
 title: "A Consistent CRUD API for Next Generation MongoDB Drivers"
 also: "https://www.mongodb.com/blog/post/consistent-crud-api-next-generation-mongodb-drivers"
 disqus_identifier: "55256f29d01a873fb40608ec"
-redirect_from: ["/blog/mongodb-crud-api"]
+redirect_from: ["/blog/mongodb-crud-api/"]
 tags: [mongodb]
 ---
 One of the more notable challenges with maintaining a suite of

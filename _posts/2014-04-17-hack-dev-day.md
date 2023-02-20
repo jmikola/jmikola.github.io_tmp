@@ -1,7 +1,7 @@
 ---
 title: "Hack Developer Day Recap"
 disqus_identifier: "5367e7c5a8780bca7b88158d"
-redirect_from: ["/blog/hack-dev-day"]
+redirect_from: ["/blog/hack-dev-day/"]
 tags: [conference, mongodb, php]
 ---
 Last week, Facebook invited 150 developers to [building 15][fb-15] on their
