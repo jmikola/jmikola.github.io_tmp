@@ -1,7 +1,7 @@
 # Site settings
 title: "jmikola.net"
 email: "jmikola@gmail.com"
-description: "Personal website for Jeremy Mikola"
+description: ""
 baseurl: ""
 url: "https://jmikola.github.io"
 
@@ -11,9 +11,20 @@ markdown: kramdown
 # GitHub Pages enables some plugins by default
 # See: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#plugins
 plugins:
+  - jekyll-paginate
   - jekyll-redirect-from
+  - jekyll-remote-theme
+  - jekyll-seo-tag
 
 permalink: "pretty" # "/:categories/:year:month:day/:title/"
+
+exclude:
+  - "composer.json"
+  - "composer.lock"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "bin/"
+  - "vendor/"
 
 # GitHub Pages settings
 # See: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#configuring-jekyll-in-your-github-pages-site
@@ -27,8 +38,11 @@ kramdown:
   math_engine: "mathjax"
   syntax_highlighter: "rouge"
 
-# SEO tag settings
-# See: https://github.com/jekyll/jekyll-seo-tag
+# Pagination settings (https://github.com/jekyll/jekyll-paginate)
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# SEO tag settings (https://github.com/jekyll/jekyll-seo-tag)
 seo_tag:
   author:
     name: Jeremy Mikola
@@ -38,21 +52,25 @@ seo_tag:
 twitter:
   username: jmikola
 
-# Minima theme settings
-# See: https://github.com/jekyll/minima/blob/v2.5.1/README.md
-theme: minima
+# Minima theme settings (https://github.com/jekyll/minima)
+remote_theme: jekyll/minima@da43ba27a5d643f3ead1e1aad6764a28ef5a92c1
 
-twitter_username: "jmikola"
-github_username: "jmikola"
-# facebook_username: "jmikola"
-# instagram_username: "jmikola"
-# linkedin_username: "jmikola"
-# youtube_username: "@jmikola"
-rss: rss
+minima:
+  skin: auto
+  social_links:
+    - { platform: github,  user_url: "https://github.com/jmikola" }
+    - { platform: twitter,  user_url: "https://twitter.com/jmikola" }
+
+author:
+  name: "Jeremy Mikola"
+  email: "jmikola@gmail.com"
+
+feed:
+  path: /atom.xml
 
 google_analytics: "UA-18627379-1"
 
-show_excerpts: true
+# show_excerpts: true
 
 disqus:
   shortname: "jmikola-net"

@@ -1,0 +1,8 @@
+---
+layout: post
+---
+{%- if page.youtube_id -%}
+  <iframe class="video" src="https://www.youtube-nocookie.com/embed/{{ page.youtube_id }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{%- endif -%}
+
+{{ content }}
