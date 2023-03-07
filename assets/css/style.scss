@@ -1,35 +1,17 @@
 ---
 ---
 
-@import
-  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-  "minima/initialize";
+/*
+  If the number of TAB files has changed, the following variable is required.
+  And it must be defined before `@import`.
+*/
+$tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
 
-header.site-header a.site-title {
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("/assets/icons/350.png");
-  padding-left: 2.5em;
-}
+@import "{{ site.theme }}";
 
-footer.site-footer p.copyright {
-  text-align: right;
-}
+/* append your custom style below */
 
 iframe.video {
   aspect-ratio: 16 / 9;
   width: 100%;
-}
-
-ul.post-list li a.post-link {
-  display: inline;
-  font-size: 1.2rem;
-}
-
-ul.post-list li a.post-meta {
-  font-size: 0.8rem;
-  font-variant: small-caps;
-  font-weight: bold;
-  opacity: 0.5;
 }

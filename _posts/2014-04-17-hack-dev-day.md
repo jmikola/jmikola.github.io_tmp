@@ -491,4 +491,4 @@ the very first place I'll visit (after the obligatory In-N-Out stop) will be
   [sgolemon]: https://twitter.com/SaraMG
   [vberchet]: https://twitter.com/vberchet
 
-  [mint-mojito]: /assets/images/20140417_philz_coffee.jpg
+  [mint-mojito]: /assets/img/20140417_philz_coffee.jpg

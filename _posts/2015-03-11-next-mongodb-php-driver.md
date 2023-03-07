@@ -140,4 +140,4 @@ anything pertaining to our next-generation drivers.
   [php7]: https://wiki.php.net/rfc/php7timeline
   [specs]: https://github.com/mongodb/specifications
 
-  [driver-arch]: /assets/images/20150310_driver_arch.svg
+  [driver-arch]: /assets/img/20150310_driver_arch.svg

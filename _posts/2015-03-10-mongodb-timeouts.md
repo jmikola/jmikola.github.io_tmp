@@ -244,4 +244,4 @@ concerned.
         a collection scan (as we do here) is generally a bad idea unless you
         know what you're doing.
 
-  [tcp_states]: /assets/images/20150310_tcp_states.png
+  [tcp_states]: /assets/img/20150310_tcp_states.png
